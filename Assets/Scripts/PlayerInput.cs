@@ -11,7 +11,7 @@ namespace DefaultNamespace
             _controller = GetComponent<CharacterController>();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             var forwardInput = 0f;
             var rightInput = 0f;
@@ -32,8 +32,10 @@ namespace DefaultNamespace
             {
                 rightInput = 1f;
             }
-            
-            _controller.Move(new Vector2(rightInput, forwardInput));
+
+            var inputVector = new Vector2(rightInput, forwardInput);
+            //Ограничение вектора "normalized"
+            _controller.Move(inputVector.normalized);
         }
     }
 }
