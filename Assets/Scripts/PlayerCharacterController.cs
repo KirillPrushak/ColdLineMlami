@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class CharacterController : MonoBehaviour
+    public class PlayerCharacterController : MonoBehaviour, IMoveController
     {
         [SerializeField] private float _maxSpeed = 2f;
         [SerializeField] private float _moveSpeed = 5f;

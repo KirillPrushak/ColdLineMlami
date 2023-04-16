@@ -5,10 +5,10 @@ namespace DefaultNamespace
 {
     public class PlayerInput : MonoBehaviour
     {
-        private CharacterController _controller;
+        private PlayerCharacterController _controller;
         private void Awake()
         {
-            _controller = GetComponent<CharacterController>();
+            _controller = GetComponent<PlayerCharacterController>();
         }
 
         private void FixedUpdate()
