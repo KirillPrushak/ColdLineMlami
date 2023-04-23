@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da57e4df50871d947ac450da30e48108
+guid: cdcfee8dbc1b7834aa9342fe5835272b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: strafe right
+      name: idle
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 43
+      lastFrame: 499
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
